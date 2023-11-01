@@ -45,7 +45,8 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Lor Mengsong',
-  description: "Lor Mengsong resume template",
+  description: "Lor Mengsong resume for apply API developer",
+  ogImageUrl: '/image/logo_link.jpg',
 };
 
 /**
@@ -135,11 +136,11 @@ export const skills: SkillGroup[] = [
     name: 'Basic Programing',
     skills: [
       {
-        name: 'C programing',
+        name: 'C Pro',
         level: 8,
       },
       {
-        name: 'C++ / OOP Programing',
+        name: 'C++ / OOP Pro',
         level: 8,
       },
     ],
@@ -245,67 +246,67 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Project title 1',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://t.me/MENGSONGLOR',
     image: porfolioImage1,
   },
   {
     title: 'Project title 2',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://t.me/MENGSONGLOR',
     image: porfolioImage2,
   },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://t.me/MENGSONGLOR',
     image: porfolioImage3,
   },
   {
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://t.me/MENGSONGLOR',
     image: porfolioImage4,
   },
   {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://t.me/MENGSONGLOR',
     image: porfolioImage5,
   },
   {
     title: 'Project title 6',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://t.me/MENGSONGLOR',
     image: porfolioImage6,
   },
   {
     title: 'Project title 7',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://t.me/MENGSONGLOR',
     image: porfolioImage7,
   },
   {
     title: 'Project title 8',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://t.me/MENGSONGLOR',
     image: porfolioImage8,
   },
   {
     title: 'Project title 9',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://t.me/MENGSONGLOR',
     image: porfolioImage9,
   },
   {
     title: 'Project title 10',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://t.me/MENGSONGLOR',
     image: porfolioImage10,
   },
   {
     title: 'Project title 11',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://t.me/MENGSONGLOR',
     image: porfolioImage11,
   },
 ];
@@ -318,19 +319,21 @@ export const education: TimelineItem[] = [
     date: '2014-2017',
     location: 'Anlong Ork Secondary School',
     title: 'Primary Degree',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: <p>Secondary school typically involves studying a variety of subjects, having different teachers for each subject, taking exams and assessments, participating in extracurricular activities, and experiencing personal and social development. It's a time of academic challenges and personal growth.</p>,
   },
   {
     date: '2017-2020',
     location: 'Hun Sen Kchao High School',
     title: 'High Degree',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: <p>Over the three years of high school, I experienced significant growth and development. In freshman year, I navigated the transition to high school, explored various subjects, and made new friends while also joining clubs to explore my interests. Sophomore year brought a deeper understanding of academic expectations and prompted me to start considering potential future paths. I became more involved in extracurricular activities and even took on a leadership role. Junior year was marked by academic intensity, focusing on standardized tests and delving deeper into specific areas of interest through advanced classes and specialized programs. It was also the time when serious college research began. In senior year, I faced the culmination of my high school journey, with a busy schedule dedicated to college applications, finalizing transcripts, and preparing for graduation. </p>,
   },
   {
     date: '2021 - Present',
     location: 'Royal Unversity Of Phnom Penh',
-    title: 'Bacholer Degree of Computer Science',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    title: 'Bachelor Degree of Computer Science',
+    content: <p>Bachelor's Degree in Computer Science provides comprehensive education in computing.Typically a four-year program covering programming, algorithms, software development, and more Includes both theoretical knowledge and hands-on practical skills Involves projects, assignments, and possibly internships for real-world application.
+                Opens doors to careers in software development, systems analysis, cybersecurity, and more.
+            </p>,
   },
 ];
 
@@ -352,10 +355,10 @@ export const experience: TimelineItem[] = [
     title: 'BackEnd Developer',
     content: (
       <p>
-        I am a back end developer at Udaya Technology. I ុused programing language  such as HTML CSS Boostrap Javascript Jquery Ajax PHP and Cakephp Framework to maintenance System And Use React js to build web application front end .
+        I am a back end developer at Udaya Technology. I used programing language  such as HTML CSS Boostrap Javascript Jquery Ajax PHP and Cakephp Framework to maintenance System And Use React js to build web application front end .
         Project such as
-        Maintenance system  SAS(Simplified Accounting System) Using Cakephp MVC framework
-        Build Management System have Udaya Attendance and VET Attendance
+        Maintenance system <em> SAS(Simplified Accounting System)</em> Using Cakephp MVC framework
+        Build Management System have <em>Udaya Attendance</em>  and <em>VET Attendance</em>  using framework react js
       </p>
     ),
   },
@@ -373,14 +376,14 @@ export const testimonial: TestimonialSection = {
       image: '/images/i1.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Nikola Tesla',
+      text: 'If you only knew the magnificence of 3, 6 and 9 , then you would have a key to the universe.',
+      image: '/images/i2.jpeg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'ព្រះ​ភិរម្យ​ភាសា អ៊ូ​ (ក្រមង៉ុយ)',
+      text: 'បើចង់ស្រាលខ្លួន រៀនសូត្រឱ្យមួន ឱ្យមាំឱ្យស្ទាត់ កុំចេះស្ទាក់ស្ទើរ ល្ងីល្ងើឥតបទ បើចេះប្រាកដ ប្រាក់រត់តាមហៅ។ កុំថ្នមកម្លាំង កាប់ជីកចូកចាំង កុំថារងាក្តៅ ធ្វើអ្វីឱ្យឆ្អិន កុំឱ្យខ្លោចឆៅ កុំដេកតែខ្លៅ ក្រក្រៅ សណ្តាប់។ បើល្ងង់ឱ្យចេះ រករៀនតម្រិះ រិះរកតម្រាប់ ឥន្ទ្រិយឆ្វេងស្តាំ កុំចាំគេប្រាប់ រៀនស្តីរៀនស្តាប់ រៀនមើលឱ្យស្តែង។ កើតមកជាមនុស្ស ទោះស្រីទោះប្រុស មិនដែលចេះឯង បើក្រឱ្យមាន វិញ្ញាណចេះក្រែង គិតគ្រប់កន្លែង កុំដេកតែក្រ។',
+      image: '/images/i3.jpg',
     },
   ],
 };
