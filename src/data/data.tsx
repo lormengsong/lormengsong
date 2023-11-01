@@ -107,7 +107,7 @@ export const aboutData: About = {
   aboutItems: [
     {label: 'Location', text: 'Phnom Penh City', Icon: MapIcon},
     {label: 'Age', text: '21', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Cambodia / khmer', Icon: FlagIcon},
+    {label: 'Nationality', text: 'Cambodia / Khmer', Icon: FlagIcon},
     {label: 'Interests', text: 'Motorcycles,Sing Song, Guitar, China Movie', Icon: SparklesIcon},
     {label: 'Study', text: 'Royal University of Phnom Penh', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Udaya Technology Co Ltd.', Icon: BuildingOffice2Icon},
@@ -368,9 +368,9 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Albert Einstein',
+      text: 'Doing the same thing over and over again and expecting different result.',
+      image: '/images/i1.jpg',
     },
     {
       name: 'Jane Doe',
