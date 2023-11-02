@@ -401,8 +401,13 @@ export const testimonial: TestimonialSection = {
       image: '/images/i3.jpg',
     },
     {
+      name: 'ឡោ ម៉េងសុង',
+      text: 'Your success will be determined by your own confidence and fortitude , confidence needs only good people.',
+      image: '/images/i8.jpg',
+    },
+    {
       name: 'Why nice girls hate me ?',
-      text: "The only knowledge I can share at that time (2014) was English. It wasn't perfect. Why did I have such a stomach to leave my comfort zone? I think it has something to do with motivation. I always have curiosity about how things work around me. I started a small blog with Google blogger when I was in grade 11. It wasn't a success, but it was fun. I learned about html and how to style my element. By keep doing this over and over, I gained knowledge and perfection along the way. I wasn't even aware of that. I hope this blog can inspire the younger generation to seek positive development in life.",
+      text: "It's important to remember that individual experiences and feelings can vary, so it's not accurate to generalize why 'nice girls' might have a certain perception of you. However, if you're experiencing this, it could be due to a variety of reasons, such as miscommunication, differing values, or past experiences. It's best to engage in open and respectful communication to understand each other better.",
       image: '/images/i7.jpg',
     },
   ],
