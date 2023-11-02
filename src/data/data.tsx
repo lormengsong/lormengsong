@@ -44,7 +44,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Lor Mengsong',
+  title: 'ឡោ​ ម៉េងសុង | Lor Mengsong',
   description: "Lor Mengsong resume for apply API developer",
   ogImageUrl: '/images/logo_link.jpg',
 };
