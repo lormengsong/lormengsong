@@ -74,12 +74,12 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Phnom Penh based <strong className="text-stone-100">Back End Developer</strong>, currently working
+        I'm a Phnom Penh based <strong className="text-stone-100">Back-End Developer</strong>, currently working
         at <strong className="text-stone-100">Udaya Techonology</strong> helping build a Web System Application.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, you can catch me training in <strong className="text-stone-100">Cafe Amozon Or Koi</strong>,
-        And <strong className="text-stone-100">Room at road 2022</strong>, exercise at the pagoda Or school such as {' '}
+        In my free time, you can find me training in <strong className="text-stone-100">cafe amazone or koi</strong>,
+        and <strong className="text-stone-100">room</strong>, exercise at the pagoda or school such as {' '}
         <strong className="text-stone-100">Royal University of Phnom Penh</strong>.
       </p>
     </>
@@ -102,16 +102,19 @@ export const heroData: Hero = {
 /**
  * About section
  */
+const currentYear = new Date().getFullYear();
+const birthYear = 2003;
+const age = currentYear - birthYear;
 export const aboutData: About = {
   profileImageSrc: profilepic2,
   description: `I'm a passionate back-end developer with a knack for crafting robust and scalable solutions that power dynamic web applications with 2 years of experience in the industry, I thrive on tackling complex challenges and architecting efficient systems.`,
   aboutItems: [
     {label: 'Location', text: 'Phnom Penh City', Icon: MapIcon},
-    {label: 'Age', text: '21', Icon: CalendarIcon},
+    {label: 'Age', text: age.toString(), Icon: CalendarIcon},
     {label: 'Nationality', text: 'Cambodia / Khmer', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles,Sing Song, Guitar, China Movie', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Researching,Reading Book, Listening Song', Icon: SparklesIcon},
     {label: 'Study', text: 'Royal University of Phnom Penh', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Udaya Technology Co Ltd.', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'Udaya Technology Co Ltd', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -314,10 +317,11 @@ export const portfolioItems: PortfolioItem[] = [
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
+const dateRange = `2021 - ${currentYear <= 2024 ? "Present" : "2024"}`;
 export const education: TimelineItem[] = [
   {
-    date: '2014-2017',
-    location: 'Anlong Ork Secondary School',
+    date: '2007-2017',
+    location: 'Anlong Ork Primary And Secondary School',
     title: 'Primary Degree',
     content: <p>Secondary school typically involves studying a variety of subjects, having different teachers for each subject, taking exams and assessments, participating in extracurricular activities, and experiencing personal and social development. It's a time of academic challenges and personal growth.</p>,
   },
@@ -325,40 +329,46 @@ export const education: TimelineItem[] = [
     date: '2017-2020',
     location: 'Hun Sen Kchao High School',
     title: 'High Degree',
-    content: <p>Over the three years of high school, I experienced significant growth and development. In freshman year, I navigated the transition to high school, explored various subjects, and made new friends while also joining clubs to explore my interests. Sophomore year brought a deeper understanding of academic expectations and prompted me to start considering potential future paths. I became more involved in extracurricular activities and even took on a leadership role. Junior year was marked by academic intensity, focusing on standardized tests and delving deeper into specific areas of interest through advanced classes and specialized programs. It was also the time when serious college research began. In senior year, I faced the culmination of my high school journey, with a busy schedule dedicated to college applications, finalizing transcripts, and preparing for graduation. </p>,
+    content: <p>Over the three years of high school, I experienced significant growth and development. In freshman year, I navigated the transition to high school, explored various subjects, and made new friends while also joining clubs to explore my interests. I became more involved in extracurricular activities and even took on a leadership role. Junior year was marked by academic intensity, focusing on standardized tests and delving deeper into specific areas of interest through advanced classes and specialized programs. It was also the time when serious college research began. In senior year, I faced the culmination of my high school journey, with a busy schedule dedicated to college applications, finalizing transcripts, and preparing for graduation. </p>,
   },
   {
-    date: '2021 - Present',
+    date: dateRange,
     location: 'Royal Unversity Of Phnom Penh',
     title: 'Bachelor Degree of Computer Science',
-    content: <p>Bachelor's Degree in Computer Science provides comprehensive education in computing.Typically a four-year program covering programming, algorithms, software development, and more Includes both theoretical knowledge and hands-on practical skills Involves projects, assignments, and possibly internships for real-world application.
-                Opens doors to careers in software development, systems analysis, cybersecurity, and more.
+    content: <p>
+                {currentYear <= 2024 ? (
+                  "I'm studying year 4 of computer science at Royal University of Phnom Penh. "
+                ) : (
+                  "I finished bachelor's degree of computer science since 2024 at Royal Unversity of Phnom Penh. "
+                )}
+                Bachelor's Degree in Computer Science provides comprehensive education in computing. Typically a four-year program covering programming, algorithms, software development, include soft skills and more Includes both theoretical knowledge and hands-on practical skills Involves projects, assignments, and possibly internships for real-world application.
+                Opens doors to careers in software development, systems analysis, cybersecurity, and artificial intelligence.
             </p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Sep 2021 - Nov 2022',
+    date: 'Sep 2021 - Oct 2022',
     location: 'ETEC CENTER School',
     title: 'ETEC Instructor',
     content: (
       <p>
-        I am a instructor at ETEC CENTER . I used to teach related with basic C C++ OPP , Basic Network  and Maintenance , Web design have HTML CSS Boostrap Javascript Jquery , 
-        Back end have PHP and Laravel with ajax build website for Front end with backend.
+        I am a instructor at ETEC CENTER 1 year experience. I used to teach related with basic C C++ OPP , Basic Network  and Maintenance , Web design have HTML CSS Boostrap Javascript Jquery , 
+        Back end have PHP and Laravel with ajax build website for Frontend with backend.
       </p>
     ),
   },
   {
-    date: 'Jan 2022 - Present',
+    date: 'Jan 2023 - Present',
     location: 'Udaya Technology',
     title: 'BackEnd Developer',
     content: (
       <p>
-        I am a back end developer at Udaya Technology. I used programing language  such as HTML CSS Boostrap Javascript Jquery Ajax PHP and Cakephp Framework to maintenance System And Use React js to build web application front end .
+        I am a back-end developer at Udaya Technology. I used programing language  such as HTML CSS Boostrap Javascript Jquery Ajax PHP and Cakephp framework to maintenance system and use React js to build web application frontend.
         Project such as
-        Maintenance system <em> SAS(Simplified Accounting System)</em> Using Cakephp MVC framework
-        Build Management System have <em>Udaya Attendance</em>  and <em>VET Attendance</em>  using framework react js
+        Maintenance system <em> SAS(Simplified Accounting System) and School Management System</em> using Cakephp MVC framework
+        build management system have <em>Udaya Attendance</em>  and <em>VET Attendance</em>  using framework react js
       </p>
     ),
   },
@@ -370,6 +380,11 @@ export const experience: TimelineItem[] = [
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
+    {
+      name: 'ព្រះពុទ្ធ',
+      text: 'សុភមង្គលនឹងមិនអាចកើតមានឡើងចំពោះអ្នកដែលមិនសប្បាយចិត្តជាមួយនឹងរបស់ដែលខ្លួនកំពុងមាននោះឡើយ.',
+      image: '/images/i6.jpg',
+    },
     {
       name: 'Albert Einstein',
       text: 'Doing the same thing over and over again and expecting different result.',
@@ -385,6 +400,11 @@ export const testimonial: TestimonialSection = {
       text: 'បើចង់ស្រាលខ្លួន រៀនសូត្រឱ្យមួន ឱ្យមាំឱ្យស្ទាត់ កុំចេះស្ទាក់ស្ទើរ ល្ងីល្ងើឥតបទ បើចេះប្រាកដ ប្រាក់រត់តាមហៅ។ កុំថ្នមកម្លាំង កាប់ជីកចូកចាំង កុំថារងាក្តៅ ធ្វើអ្វីឱ្យឆ្អិន កុំឱ្យខ្លោចឆៅ កុំដេកតែខ្លៅ ក្រក្រៅ សណ្តាប់។ បើល្ងង់ឱ្យចេះ រករៀនតម្រិះ រិះរកតម្រាប់ ឥន្ទ្រិយឆ្វេងស្តាំ កុំចាំគេប្រាប់ រៀនស្តីរៀនស្តាប់ រៀនមើលឱ្យស្តែង។ កើតមកជាមនុស្ស ទោះស្រីទោះប្រុស មិនដែលចេះឯង បើក្រឱ្យមាន វិញ្ញាណចេះក្រែង គិតគ្រប់កន្លែង កុំដេកតែក្រ។',
       image: '/images/i3.jpg',
     },
+    {
+      name: 'Why nice girls hate me ?',
+      text: "The only knowledge I can share at that time (2014) was English. It wasn't perfect. Why did I have such a stomach to leave my comfort zone? I think it has something to do with motivation. I always have curiosity about how things work around me. I started a small blog with Google blogger when I was in grade 11. It wasn't a success, but it was fun. I learned about html and how to style my element. By keep doing this over and over, I gained knowledge and perfection along the way. I wasn't even aware of that. I hope this blog can inspire the younger generation to seek positive development in life.",
+      image: '/images/i7.jpg',
+    },
   ],
 };
 
@@ -399,7 +419,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.Email,
       text: 'lormengsong@gmail.com',
-      href: 'lormengsong@gmail.com',
+      href: 'mailto:lormengsong@gmail.com',
     },
     {
       type: ContactType.Location,

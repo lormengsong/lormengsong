@@ -19,14 +19,14 @@ const Footer: FC = memo(() => (
       </div>
       <a
         className="-m-2 flex items-center gap-x-1 rounded-md p-2 ring-yellow focus:outline-none focus:ring-2"
-        href="https://t.me/MENGSONGLOR">
+        href="https://t.me/MENGSONGLOR" target='_blank'>
         <BoltIcon className="h-5 w-5 text-yellow" />
         <span>
           Provided by <span className="text-white">Lor</span>
           <span className="italic text-yellow">Mengsong</span>
         </span>
       </a>
-      <span className="text-sm text-neutral-700">© Copyright {new Date().getFullYear()} Lor Mengsong</span>
+      <span className="text-sm text-neutral-700">&copy; Copyright {new Date().getFullYear()} Lor Mengsong</span>
     </div>
   </div>
 ));
