@@ -10,6 +10,7 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
+import FacebookIcon from '../components/Icon/FacebookIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
@@ -455,6 +456,11 @@ export const contact: ContactSection = {
       text: '0963109195',
       href: 'tel:096-310-9195',
     },
+    {
+      type: ContactType.Phone,
+      text: '0972313205',
+      href: 'tel:097-231-3205',
+    },
   ],
 };
 
@@ -462,6 +468,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
+  {label: 'Facebook', Icon: FacebookIcon, href: 'https://web.facebook.com/loa.mengsong'},
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/SakanaTest'},
   {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://www.facebook.com/loa.mengsong'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/mengsong-lor-6a984b259/'},
