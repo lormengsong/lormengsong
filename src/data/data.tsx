@@ -4,6 +4,8 @@ import {
   BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
+  HeartIcon,
+  HomeIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
@@ -46,7 +48,6 @@ import {
 export const homePageMeta: HomepageMeta = {
   title: 'ឡោ​ ម៉េងសុង | Lor Mengsong',
   description: "Lor Mengsong resume for apply API developer",
-  ogImageUrl: '/images/logo_link.jpg',
 };
 
 /**
@@ -112,9 +113,12 @@ export const aboutData: About = {
     {label: 'Location', text: 'Phnom Penh City', Icon: MapIcon},
     {label: 'Age', text: age.toString(), Icon: CalendarIcon},
     {label: 'Nationality', text: 'Cambodia / Khmer', Icon: FlagIcon},
-    {label: 'Interests', text: 'Researching,Reading Book, Listening Song', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Researching,Reading Book,Listen Song', Icon: SparklesIcon},
+    {label: 'Hometown', text: 'Kompong Cham', Icon: HomeIcon},
+    {label: 'Status', text: 'Single', Icon: HeartIcon},
     {label: 'Study', text: 'Royal University of Phnom Penh', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Udaya Technology Co Ltd', Icon: BuildingOffice2Icon},
+   
   ],
 };
 
@@ -247,9 +251,9 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
+    title: 'Project E-commerce Website',
     description: 'Give a short description of your project here.',
-    url: 'https://t.me/MENGSONGLOR',
+    url: 'https://emengsong.000webhostapp.com/Ecommerce-app-h/index.php',
     image: porfolioImage1,
   },
   {
@@ -366,9 +370,9 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         I am a back-end developer at Udaya Technology. I used programing language  such as HTML CSS Boostrap Javascript Jquery Ajax PHP and Cakephp framework to maintenance system and use React js to build web application frontend.
-        Project such as
-        Maintenance system <em> SAS(Simplified Accounting System) and School Management System</em> using Cakephp MVC framework
-        build management system have <em>Udaya Attendance</em>  and <em>VET Attendance</em>  using framework react js
+        <br /><span>Project such as</span><br />
+        <b>1.</b> Maintenance system <em> SAS(Simplified Accounting System) and School Management System</em> using Cakephp MVC framework <br />
+        <b>2.</b> build management system have <em>Udaya Attendance</em>  and <em>VET Attendance</em>  using framework react js 
       </p>
     ),
   },
