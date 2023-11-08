@@ -114,7 +114,7 @@ export const aboutData: About = {
     {label: 'Location', text: 'Phnom Penh City', Icon: MapIcon},
     {label: 'Age', text: age.toString(), Icon: CalendarIcon},
     {label: 'Nationality', text: 'Cambodia / Khmer', Icon: FlagIcon},
-    {label: 'Interests', text: 'Researching,Reading Book,Listen Song', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Researching,Read Book,Listen Song', Icon: SparklesIcon},
     {label: 'Hometown', text: 'Kompong Cham', Icon: HomeIcon},
     {label: 'Status', text: 'Single', Icon: HeartIcon},
     {label: 'Study', text: 'Royal University of Phnom Penh', Icon: AcademicCapIcon},
@@ -236,7 +236,7 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
-        name: 'GITHUB/GUTLAB',
+        name: 'GITHUB/GITLAB',
         level: 7,
       },
       {
@@ -252,8 +252,8 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project E-commerce Website',
-    description: 'Give a short description of your project here.',
+    title: 'E-commerce Website',
+    description: 'Show Product on business e-commerce.',
     url: 'https://emengsong.000webhostapp.com/Ecommerce-app-h/index.php',
     image: porfolioImage1,
   },
@@ -387,17 +387,17 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'ព្រះពុទ្ធ',
-      text: 'សុភមង្គលនឹងមិនអាចកើតមានឡើងចំពោះអ្នកដែលមិនសប្បាយចិត្តជាមួយនឹងរបស់ដែលខ្លួនកំពុងមាននោះឡើយ.',
+      text: 'សុភមង្គលនឹងមិនអាចកើតមានឡើងចំពោះអ្នកដែលមិនសប្បាយចិត្តជាមួយនឹងរបស់ដែលខ្លួនកំពុងមាននោះឡើយ​។សុភមង្គលវាមិនអាស្រ័យថាតើអ្នកជានរណា ឫអ្វីដែលអ្នកមាននោះទេ តែវាអាស្រ័យលើអ្វីដែលអ្នកគិត។',
       image: '/images/i6.jpg',
     },
     {
       name: 'Albert Einstein',
-      text: 'Doing the same thing over and over again and expecting different result.',
+      text: `Doing the same thing over and over again and expecting different result.You never fail until you stop trying.If you can not explain it simply, you don't understand it well enough`,
       image: '/images/i1.jpg',
     },
     {
       name: 'Nikola Tesla',
-      text: 'If you only knew the magnificence of 3, 6 and 9 , then you would have a key to the universe.',
+      text: 'If you only knew the magnificence of 3, 6 and 9 , then you would have a key to the universe.If you want to find the secrets of the Universe, think in terms of energy, frequency and vibration.',
       image: '/images/i2.jpeg',
     },
     {
