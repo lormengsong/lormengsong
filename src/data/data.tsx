@@ -80,7 +80,7 @@ export const heroData: Hero = {
         at <strong className="text-stone-100">Udaya Techonology</strong> helping build a Web System Application.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, you can find me training in <strong className="text-stone-100">cafe amazone or koi</strong>,
+        In my free time, you can find me training in <strong className="text-stone-100">cafe or koi</strong>,
         and <strong className="text-stone-100">room</strong>, exercise at the pagoda or school such as {' '}
         <strong className="text-stone-100">Royal University of Phnom Penh</strong>.
       </p>
@@ -373,7 +373,7 @@ export const experience: TimelineItem[] = [
         I am a back-end developer at Udaya Technology. I used programing language  such as HTML CSS Boostrap Javascript Jquery Ajax PHP and Cakephp framework to maintenance system and use React js to build web application frontend.
         <br /><span>Project such as</span><br />
         <b>1.</b> Maintenance system <em> SAS(Simplified Accounting System) and School Management System</em> using Cakephp MVC framework <br />
-        <b>2.</b> build management system have <em>Udaya Attendance</em>  and <em>VET Attendance</em>  using framework react js 
+        <b>2.</b> Build management system have <em>Udaya Attendance</em>  and <em>VET Attendance</em>  using framework react js 
       </p>
     ),
   },
