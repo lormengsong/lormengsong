@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {FC, memo, useCallback, useState} from 'react';
+import {FC, memo, useCallback, useMemo,useState} from 'react';
 
 interface FormData {
   name: string;
@@ -8,18 +8,18 @@ interface FormData {
 }
 
 const ContactForm: FC = memo(() => {
-  const defaultData: FormData = {
+  const defaultData: FormData = useMemo(() => ({
     name: '',
     email: '',
     message: '',
-  };
+  }), []);
 
   const [data, setData] = useState<FormData>(defaultData);
 
   const onChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
       const {name, value} = event.target;
-      setData((prevData) => ({
+      setData(prevData => ({
         ...prevData,
         [name]: value,
       }));
@@ -32,7 +32,7 @@ const ContactForm: FC = memo(() => {
       event.preventDefault();
       try {
         await axios.post('/api/send-message', data);
-        alert('Thanks you for send message!');
+        alert('Thank you for sending a message!');
         setData(defaultData); // Reset form after successful submission
       } catch (error) {
         console.error('Error sending message:', error);

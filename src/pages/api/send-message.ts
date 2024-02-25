@@ -1,5 +1,5 @@
 import axios from "axios";
-import { NextApiRequest, NextApiResponse } from "next";
+import {NextApiRequest, NextApiResponse} from "next";
 
 const BOT_TOKEN = process.env.NEXT_TELEGRAM_TOKEN;
 const CHAT_ID = process.env.NEXT_CHAT_ID;
@@ -33,10 +33,10 @@ export default async function handler(
     return;
   }
 
-  const { name, email, message } = req.body;
+  const {name, email, message} = req.body;
 
   if (!name || !email || !message) {
-    res.status(400).json({ message: "Invalid request body." });
+    res.status(400).json({message: "Invalid request body."});
     return;
   }
 
@@ -45,9 +45,9 @@ export default async function handler(
 
   try {
     await axios.post(url, {}, config);
-    res.status(200).json({ message: "Message sent successfully" });
+    res.status(200).json({message: "Message sent successfully"});
   } catch (error) {
     console.error("Error sending message:", error);
-    res.status(500).json({ message: "Failed to send message." });
+    res.status(500).json({message: "Failed to send message."});
   }
 }
