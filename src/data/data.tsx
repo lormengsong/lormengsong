@@ -180,11 +180,19 @@ export const skills: SkillGroup[] = [
         name: 'AJAX',
         level: 8,
       },
+      {
+        name: 'REST API',
+        level: 5,
+      },
     ],
   },
   {
     name: 'Frontend development',
     skills: [
+      {
+        name: 'VUE / VUETIFY',
+        level: 6,
+      },
       {
         name: 'React',
         level: 6,
@@ -373,7 +381,8 @@ export const experience: TimelineItem[] = [
         I am a back-end developer at Udaya Technology. I used programing language  such as HTML CSS Boostrap Javascript Jquery Ajax PHP and Cakephp framework to maintenance system and use React js to build web application frontend.
         <br /><span>Project such as</span><br />
         <b>1.</b> Maintenance system <em> SAS(Simplified Accounting System) and School Management System</em> using Cakephp MVC framework <br />
-        <b>2.</b> Build management system have <em>Udaya Attendance</em>  and <em>VET Attendance</em>  using framework react js 
+        <b>2.</b> Build management system have <em>Udaya Attendance</em>  and <em>VET Attendance</em>  using framework react js <br/>
+        <b>3.</b> Build <em>Websie VET express</em> booking using VUE JS 2  <b>  <a href="https://vireakbuntham.com" title='https://vireakbuntham.com'>Click link</a> </b>  VUE JS 2 
       </p>
     ),
   },
