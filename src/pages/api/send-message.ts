@@ -7,12 +7,20 @@ const USER_ID = process.env.NEXT_USER_ID;
 
 const getConfig = (name: string, email: string, message: string) => {
   const date = new Date();
-  const hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
-  const ampm = date.getHours() >= 12 ? 'PM' : 'AM';
-  const formattedDate = `${date.getDate().toString().padStart(2, '0')}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getFullYear()} ${hours.toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')} ${ampm}`;
+  const formattedDate = date.toLocaleString('en-US', {
+    timeZone: 'Asia/Phnom_Penh',
+    year: 'numeric',
+    month: 'short',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: true // Use 12-hour clock format
+  });
   const text = `
-    ========= Contact =========
+    ========= Contact ========= \n
    &#9790;<b> Date:${formattedDate}  </b> \n
+   =========================  \n
    &#9787;<b> Name: </b> ${name} \n
    &#9993;<b> Email: </b>${email} \n
    &#9743;<b> Message: </b> <i> ${message}</i>
