@@ -7,17 +7,9 @@ const USER_ID = process.env.NEXT_USER_ID;
 
 const getConfig = (name: string, email: string, message: string) => {
   const date = new Date();
-  const options = {
-    timeZone: 'Asia/Phnom_Penh',
-    year: 'numeric',
-    month: 'short',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    hour12: true // Use 12-hour clock format
-  };
-  const formattedDate = date.toLocaleString('en-US', options);
+  const hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
+  const ampm = date.getHours() >= 12 ? 'PM' : 'AM';
+  const formattedDate = `${date.getDate().toString().padStart(2, '0')}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getFullYear()} ${hours.toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')} ${ampm}`;
   const text = `
     ========= Contact =========
    &#9790;<b> Date:${formattedDate}  </b> \n
