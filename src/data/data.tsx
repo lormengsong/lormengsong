@@ -382,7 +382,7 @@ export const experience: TimelineItem[] = [
         <br /><span>Project such as</span><br />
         <b>1.</b> Maintenance system <em> SAS(Simplified Accounting System) and School Management System</em> using Cakephp MVC framework <br />
         <b>2.</b> Build management system have <em>Udaya Attendance</em>  and <em>VET Attendance</em>  using framework react js <br/>
-        <b>3.</b> Build <em>Websie VET express</em> booking using VUE JS 2  <b>  <a href="https://vireakbuntham.com" title='https://vireakbuntham.com'>Click link</a> </b>  VUE JS 2 
+        <b>3.</b> Build <em>Websie VET express</em> booking using VUE JS 2  <b>  <a href="https://vireakbuntham.com" target="_blank" title='https://vireakbuntham.com'>Click link</a> </b> 
       </p>
     ),
   },
