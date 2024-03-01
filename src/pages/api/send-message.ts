@@ -18,12 +18,12 @@ const getConfig = (name: string, email: string, message: string) => {
     hour12: true // Use 12-hour clock format
   });
   const text = `
-    ========= Contact ========= \n
-   &#9790;<b> Date:${formattedDate}  </b> \n
-   =========================  \n
-   &#9787;<b> Name: </b> ${name} \n
-   &#9993;<b> Email: </b>${email} \n
-   &#9743;<b> Message: </b> <i> ${message}</i>
+    ========= Contact =========\n
+  &#9790;<b> Date: ${formattedDate}  </b>\n
+  ========================\n
+  &#9787;<b> Name: </b> ${name}\n
+  &#9993;<b> Email: </b>${email}\n
+  &#9743;<b> Message: </b> <i> ${message}</i>
   `;
   
   return {
