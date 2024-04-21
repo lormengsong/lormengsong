@@ -66,7 +66,11 @@ export const SectionId = {
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
-
+const currentYear = new Date().getFullYear();
+const birthYear = 2003;
+const age = currentYear - birthYear;
+const startwork = 2021;
+const worktime = currentYear - startwork;
 /**
  * Hero section
  */
@@ -78,6 +82,7 @@ export const heroData: Hero = {
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a Phnom Penh based <strong className="text-stone-100">Back-End Developer</strong>, currently working
         at <strong className="text-stone-100">Udaya Techonology</strong> helping build a Web System Application.
+        I have experience <strong className="text-stone-100">{worktime} years</strong>  for Web Development or fullstack Web Development.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time, you can find me training in <strong className="text-stone-100">cafe or koi</strong>,
@@ -104,12 +109,10 @@ export const heroData: Hero = {
 /**
  * About section
  */
-const currentYear = new Date().getFullYear();
-const birthYear = 2003;
-const age = currentYear - birthYear;
+
 export const aboutData: About = {
   profileImageSrc: profilepic2,
-  description: `I'm a passionate back-end developer with a knack for crafting robust and scalable solutions that power dynamic web applications with 2 years of experience in the industry, I thrive on tackling complex challenges and architecting efficient systems.`,
+  description: `I'm a passionate back-end developer with a knack for crafting robust and scalable solutions that power dynamic web applications with ${worktime} years of experience in the industry, I thrive on tackling complex challenges and architecting efficient systems.`,
   aboutItems: [
     {label: 'Location', text: 'Phnom Penh City', Icon: MapIcon},
     {label: 'Age', text: age.toString(), Icon: CalendarIcon},
@@ -136,7 +139,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'English',
-        level: 6,
+        level: 7,
       }
     ],
   },
@@ -145,11 +148,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'C Pro',
-        level: 8,
+        level: 9,
       },
       {
         name: 'C++ / OOP Pro',
-        level: 8,
+        level: 9,
       },
     ],
   },
@@ -162,7 +165,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'LARAVEL',
-        level: 7,
+        level: 8,
       },
       {
         name: 'CAKEPHP',
@@ -170,19 +173,19 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'JAVA',
-        level: 5,
+        level: 7,
       },
       {
         name: 'C#',
-        level: 5,
+        level: 7,
       },
       {
         name: 'AJAX',
-        level: 8,
+        level: 9,
       },
       {
         name: 'REST API',
-        level: 5,
+        level: 7,
       },
     ],
   },
@@ -191,19 +194,19 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'VUE / VUETIFY',
-        level: 6,
+        level: 9,
       },
       {
         name: 'React',
-        level: 6,
-      },
-      {
-        name: 'Jquery',
         level: 8,
       },
       {
+        name: 'Jquery',
+        level: 9,
+      },
+      {
         name: 'Javascript',
-        level: 6,
+        level: 9,
       },
       {
         name: 'HTML',
@@ -211,11 +214,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'CSS',
-        level: 8,
+        level: 9,
       },
       {
         name: 'BOOSTRAP',
-        level: 8,
+        level: 9,
       },
     ],
   },
@@ -232,7 +235,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'ORACLE',
-        level: 4,
+        level: 7,
       }
     ],
   },
@@ -241,15 +244,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'GIT',
-        level: 7,
+        level: 8,
       },
       {
         name: 'GITHUB/GITLAB',
-        level: 7,
+        level: 9,
       },
       {
         name: 'SVN',
-        level: 6,
+        level: 7,
       }
     ],
   },
@@ -382,7 +385,7 @@ export const experience: TimelineItem[] = [
         <br /><span>Project such as</span><br />
         <b>1.</b> Maintenance system <em> SAS(Simplified Accounting System) and School Management System</em> using Cakephp MVC framework <br />
         <b>2.</b> Build management system have <em>Udaya Attendance</em>  and <em>VET Attendance</em>  using framework react js <br/>
-        <b>3.</b> Build <em>Websie VET express</em> booking using VUE JS 2  <b>  <a href="https://vireakbuntham.com" target="_blank" title='https://vireakbuntham.com'>Click link</a> </b> 
+        <b>3.</b> Build <em>Website VET express</em> booking using VUE JS 2  <b>  <a href="https://vireakbuntham.com" target="_blank" title='https://vireakbuntham.com'>Click link</a> </b> 
       </p>
     ),
   },

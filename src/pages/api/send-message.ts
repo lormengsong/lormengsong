@@ -19,11 +19,11 @@ const getConfig = (name: string, email: string, message: string) => {
   });
   const text = `
     ========= Contact =========\n
-  &#9790;<b> Date: ${formattedDate}  </b>\n
+  &#128197;<b> Date: ${formattedDate}  </b>\n
   ========================\n
   &#9787;<b> Name: </b> ${name}\n
   &#9993;<b> Email: </b>${email}\n
-  &#9743;<b> Message: </b> <i> ${message}</i>
+  &#128221;<b> Message: </b> <i> ${message}</i>
   `;
   
   return {
