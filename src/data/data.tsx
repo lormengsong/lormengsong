@@ -69,7 +69,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 const currentYear = new Date().getFullYear();
 const birthYear = 2003;
 const age = currentYear - birthYear;
-const startwork = 2021;
+const startwork = 2022;
 const worktime = currentYear - startwork;
 /**
  * Hero section
@@ -80,9 +80,9 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Phnom Penh based <strong className="text-stone-100">Back-End Developer</strong>, currently working
+        I'm a Phnom Penh based <strong className="text-stone-100">Back-End/Front-end Developer</strong>, currently working
         at <strong className="text-stone-100">Udaya Techonology</strong> helping build a Web System Application.
-        I have experience <strong className="text-stone-100">{worktime} years</strong>  for Web Development or fullstack Web Development.
+        I have experience <strong className="text-stone-100">{worktime} years</strong> plus for Web Development or fullstack Web Development.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time, you can find me training in <strong className="text-stone-100">cafe or koi</strong>,
@@ -112,7 +112,7 @@ export const heroData: Hero = {
 
 export const aboutData: About = {
   profileImageSrc: profilepic2,
-  description: `I'm a passionate back-end developer with a knack for crafting robust and scalable solutions that power dynamic web applications with ${worktime} years of experience in the industry, I thrive on tackling complex challenges and architecting efficient systems.`,
+  description: `I'm a passionate back-end and front-end developer with a knack for crafting robust and scalable solutions that power dynamic web applications with ${worktime} years plus of experience in the industry, I thrive on tackling complex challenges and architecting efficient systems.`,
   aboutItems: [
     {label: 'Location', text: 'Phnom Penh City', Icon: MapIcon},
     {label: 'Age', text: age.toString(), Icon: CalendarIcon},
@@ -378,7 +378,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'Jan 2023 - Present',
     location: 'Udaya Technology',
-    title: 'BackEnd Developer',
+    title: 'BackEnd/FrontEnd Developer',
     content: (
       <p>
         I am a back-end developer at Udaya Technology. I used programing language  such as HTML CSS Boostrap Javascript Jquery Ajax PHP and Cakephp framework to maintenance system and use React js to build web application frontend.
