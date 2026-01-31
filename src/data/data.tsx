@@ -81,7 +81,7 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a Phnom Penh based <strong className="text-stone-100">Back-End/Front-end Developer</strong>, currently working
-        at <strong className="text-stone-100">Udaya Techonology</strong> helping build a Web System Application.
+        at <strong className="text-stone-100">Mobile C&C Technology</strong> helping build a Web System Application.
         I have experience <strong className="text-stone-100">{worktime} years</strong> plus for Web Development or fullstack Web Development.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -121,7 +121,7 @@ export const aboutData: About = {
     {label: 'Hometown', text: 'Kompong Cham', Icon: HomeIcon},
     {label: 'Status', text: 'Single', Icon: HeartIcon},
     {label: 'Study', text: 'Royal University of Phnom Penh', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Udaya Technology Co Ltd', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'Mobile C&C Co Ltd', Icon: BuildingOffice2Icon},
    
   ],
 };
@@ -187,11 +187,16 @@ export const skills: SkillGroup[] = [
         name: 'REST API',
         level: 7,
       },
+      {
+        name: 'MICRO SERVICE',
+        level: 7,
+      },
     ],
   },
   {
     name: 'Frontend development',
     skills: [
+      
       {
         name: 'VUE / VUETIFY',
         level: 9,
@@ -218,6 +223,14 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'BOOSTRAP',
+        level: 9,
+      },
+      {
+        name: 'SCSS SASS TAIWIND',
+        level: 9,
+      },
+      {
+        name: 'TYPESCRIPT',
         level: 9,
       },
     ],
@@ -376,7 +389,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'Jan 2023 - Present',
+    date: 'Jan 2023 - Auguest 2024',
     location: 'Udaya Technology',
     title: 'BackEnd/FrontEnd Developer',
     content: (
@@ -386,6 +399,21 @@ export const experience: TimelineItem[] = [
         <b>1.</b> Maintenance system <em> SAS(Simplified Accounting System) and School Management System</em> using Cakephp MVC framework <br />
         <b>2.</b> Build management system have <em>Udaya Attendance</em>  and <em>VET Attendance</em>  using framework react js <br/>
         <b>3.</b> Build <em>Website VET express</em> booking using VUE JS 2  <b>  <a href="https://vireakbuntham.com" target="_blank" title='https://vireakbuntham.com'>Click link</a> </b> 
+      </p>
+    ),
+  },
+  {
+    date: 'Auguest 2024 - Present',
+    location: 'Mobile C&C',
+    title: 'FrontEnd Developer',
+    content: (
+      <p>
+        I am a Frontend Developer at Mobile C&C. I used programing language  such as HTML CSS SCSS TAIWIND Javascript VUEJS VUETIFY TYPESCRIPT PINIA React JS. <br />
+        <b>.</b> Designed responsive web pages and applications using HTML, CSS, and SCSS TAIWIND. <br />
+        <b>.</b> Developed and built web applications and app interfaces using Vue.js and the Ionic framework including CESCO KR App and Hiplus KR App.<br/>
+        <b>.</b> Collaborated with the Korean team and partner teams to create intuitive, logically structured, and visually engaging UI screens. <br />
+        <b>.</b> Fixed bugs and performed client-requested maintenance on web applications, such as the Hanwha KR Project. <br />
+        <b>.</b> Proactively learning new technologies, including React.js, Flutter, and Dart, to expand front-end and cross-platform development skills. <br />
       </p>
     ),
   },
@@ -460,18 +488,13 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Github,
-      text: '@SakanaTest',
-      href: 'https://github.com/SakanaTest',
+      text: '@lormengsong',
+      href: 'https://github.com/lormengsong',
     },
     {
       type: ContactType.Phone,
       text: '0963109195',
       href: 'tel:096-310-9195',
-    },
-    {
-      type: ContactType.Phone,
-      text: '0972313205',
-      href: 'tel:097-231-3205',
     },
   ],
 };
@@ -481,7 +504,7 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Facebook', Icon: FacebookIcon, href: 'https://web.facebook.com/loa.mengsong'},
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/SakanaTest'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/lormengsong'},
   {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://www.facebook.com/loa.mengsong'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/mengsong-lor-6a984b259/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/lormengsong/'},
