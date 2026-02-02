@@ -378,7 +378,7 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Sep 2021 - Oct 2022',
+    date: 'Sep 2021 - Dec 2022',
     location: 'ETEC CENTER School',
     title: 'ETEC Instructor',
     content: (
