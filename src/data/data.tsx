@@ -383,8 +383,8 @@ export const experience: TimelineItem[] = [
     title: 'ETEC Instructor',
     content: (
       <p>
-        I am a instructor at ETEC CENTER 1 year experience. I used to teach related with basic C C++ OPP , Basic Network  and Maintenance , Web design have HTML CSS Boostrap Javascript Jquery , 
-        Back end have PHP and Laravel with ajax build website for Frontend with backend.
+        I am an instructor at ETEC Center with 1 year of teaching experience. I teach subjects related to basic programming, including C, C++, and Object-Oriented Programming (OOP). I also teach Basic Networking and Computer Maintenance.
+        In Web Design, I teach HTML, CSS, Bootstrap, JavaScript, and jQuery. For backend development, I teach PHP and Laravel, using AJAX to build dynamic websites that integrate frontend and backend functionality.
       </p>
     ),
   },
