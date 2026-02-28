@@ -49,6 +49,22 @@ import {
 export const homePageMeta: HomepageMeta = {
   title: 'ឡោ​ ម៉េងសុង | Lor Mengsong',
   description: "Lor Mengsong resume for apply API developer",
+  openGraph: {
+    title: "Lor Mengsong",
+    description: "This is my awesome website",
+    url: "https://example.com",
+    siteName: "Lor Mengsong",
+    images: [
+      {
+        url: "https://example.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Lor Mengsong OG Image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 /**

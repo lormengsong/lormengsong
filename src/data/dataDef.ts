@@ -3,10 +3,25 @@ import {FC, ForwardRefExoticComponent, SVGProps} from 'react';
 
 import {IconProps} from '../components/Icon/Icon';
 
+export interface OpenGraphMeta {
+  title: string;
+  description: string;
+  url: string;
+  siteName: string;
+  images: {
+    url: string;
+    width?: number;
+    height?: number;
+    alt?: string;
+  }[];
+  locale?: string;
+  type?: "website" | "article";
+}
 export interface HomepageMeta {
   title: string;
   description: string;
   ogImageUrl?: string | StaticImageData;
+  openGraph?: OpenGraphMeta;
   twitterCardType?: 'summary' | 'summary_large';
   twitterTitle?: string;
   twitterSite?: string;
