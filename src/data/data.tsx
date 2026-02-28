@@ -394,13 +394,13 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Sep 2021 - Oct 2022',
+    date: 'Sep 2021 - Dec 2022',
     location: 'ETEC CENTER School',
     title: 'ETEC Instructor',
     content: (
       <p>
-        I am a instructor at ETEC CENTER 1 year experience. I used to teach related with basic C C++ OPP , Basic Network  and Maintenance , Web design have HTML CSS Boostrap Javascript Jquery , 
-        Back end have PHP and Laravel with ajax build website for Frontend with backend.
+        I am an instructor at ETEC Center with 1 year of teaching experience. I teach subjects related to basic programming, including C, C++, and Object-Oriented Programming (OOP). I also teach Basic Networking and Computer Maintenance.
+        In Web Design, I teach HTML, CSS, Bootstrap, JavaScript, and jQuery. For backend development, I teach PHP and Laravel, using AJAX to build dynamic websites that integrate frontend and backend functionality.
       </p>
     ),
   },
@@ -410,11 +410,11 @@ export const experience: TimelineItem[] = [
     title: 'BackEnd/FrontEnd Developer',
     content: (
       <p>
-        I am a back-end developer at Udaya Technology. I used programing language  such as HTML CSS Boostrap Javascript Jquery Ajax PHP and Cakephp framework to maintenance system and use React js to build web application frontend.
-        <br /><span>Project such as</span><br />
-        <b>1.</b> Maintenance system <em> SAS(Simplified Accounting System) and School Management System</em> using Cakephp MVC framework <br />
-        <b>2.</b> Build management system have <em>Udaya Attendance</em>  and <em>VET Attendance</em>  using framework react js <br/>
-        <b>3.</b> Build <em>Website VET express</em> booking using VUE JS 2  <b>  <a href="https://vireakbuntham.com" target="_blank" title='https://vireakbuntham.com'>Click link</a> </b> 
+        I am a Back-End Developer at Udaya Technology. I use programming languages and technologies such as HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, PHP, and the CakePHP framework to maintain and develop systems. I also use React.js to build web application frontends.
+        <br /><span>Projects include:</span><br />
+        <b>1.</b> Maintained and developed systems such as the SAS (Simplified Accounting System) and a School Management System using the CakePHP MVC framework. <br />
+        <b>2.</b> Built management systems including Udaya Attendance and VET Attendance using the React.js framework. <br/>
+        <b>3.</b> Developed the <em>VET Express Booking website and miniapp VET at ABA</em> booking using VUE JS 2  <b>  <a href="https://vireakbuntham.com" target="_blank" title='https://vireakbuntham.com'>Click link</a> </b> 
       </p>
     ),
   },
