@@ -47,24 +47,10 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'ឡោ​ ម៉េងសុង | Lor Mengsong',
+  title: 'ឡោ ម៉េងសុង | Lor Mengsong',
   description: "Lor Mengsong resume for apply API developer",
-  openGraph: {
-    title: "Lor Mengsong",
-    description: "This is my awesome website",
-    url: "https://example.com",
-    siteName: "Lor Mengsong",
-    images: [
-      {
-        url: "https://example.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Lor Mengsong OG Image",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
+  keywords: ['lormengsong', 'ឡោ ម៉េងសុង', 'Lor Mengsong', 'lormengsong.vercel.app', 'portfolio', 'developer'],
+  ogImageUrl: "/og-image.jpg",
 };
 
 /**
@@ -130,15 +116,15 @@ export const aboutData: About = {
   profileImageSrc: profilepic2,
   description: `I'm a passionate back-end and front-end developer with a knack for crafting robust and scalable solutions that power dynamic web applications with ${worktime} years plus of experience in the industry, I thrive on tackling complex challenges and architecting efficient systems.`,
   aboutItems: [
-    {label: 'Location', text: 'Phnom Penh City', Icon: MapIcon},
-    {label: 'Age', text: age.toString(), Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Cambodia / Khmer', Icon: FlagIcon},
-    {label: 'Interests', text: 'Researching,Read Book,Listen Song', Icon: SparklesIcon},
-    {label: 'Hometown', text: 'Kompong Cham', Icon: HomeIcon},
-    {label: 'Status', text: 'Single', Icon: HeartIcon},
-    {label: 'Study', text: 'Royal University of Phnom Penh', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Mobile C&C Co Ltd', Icon: BuildingOffice2Icon},
-   
+    { label: 'Location', text: 'Phnom Penh City', Icon: MapIcon },
+    { label: 'Age', text: age.toString(), Icon: CalendarIcon },
+    { label: 'Nationality', text: 'Cambodia / Khmer', Icon: FlagIcon },
+    { label: 'Interests', text: 'Researching,Read Book,Listen Song', Icon: SparklesIcon },
+    { label: 'Hometown', text: 'Kompong Cham', Icon: HomeIcon },
+    { label: 'Status', text: 'Single', Icon: HeartIcon },
+    { label: 'Study', text: 'Royal University of Phnom Penh', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'Mobile C&C Co Ltd', Icon: BuildingOffice2Icon },
+
   ],
 };
 
@@ -212,7 +198,7 @@ export const skills: SkillGroup[] = [
   {
     name: 'Frontend development',
     skills: [
-      
+
       {
         name: 'VUE / VUETIFY',
         level: 9,
@@ -381,14 +367,14 @@ export const education: TimelineItem[] = [
     location: 'Royal Unversity Of Phnom Penh',
     title: 'Bachelor Degree of Computer Science',
     content: <p>
-                {currentYear <= 2024 ? (
-                  "I'm studying year 4 of computer science at Royal University of Phnom Penh. "
-                ) : (
-                  "I finished bachelor's degree of computer science since 2024 at Royal Unversity of Phnom Penh. "
-                )}
-                Bachelor's Degree in Computer Science provides comprehensive education in computing. Typically a four-year program covering programming, algorithms, software development, include soft skills and more Includes both theoretical knowledge and hands-on practical skills Involves projects, assignments, and possibly internships for real-world application.
-                Opens doors to careers in software development, systems analysis, cybersecurity, and artificial intelligence.
-            </p>,
+      {currentYear <= 2024 ? (
+        "I'm studying year 4 of computer science at Royal University of Phnom Penh. "
+      ) : (
+        "I finished bachelor's degree of computer science since 2024 at Royal Unversity of Phnom Penh. "
+      )}
+      Bachelor's Degree in Computer Science provides comprehensive education in computing. Typically a four-year program covering programming, algorithms, software development, include soft skills and more Includes both theoretical knowledge and hands-on practical skills Involves projects, assignments, and possibly internships for real-world application.
+      Opens doors to careers in software development, systems analysis, cybersecurity, and artificial intelligence.
+    </p>,
   },
 ];
 
@@ -413,8 +399,8 @@ export const experience: TimelineItem[] = [
         I am a Back-End Developer at Udaya Technology. I use programming languages and technologies such as HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, PHP, and the CakePHP framework to maintain and develop systems. I also use React.js to build web application frontends.
         <br /><span>Projects include:</span><br />
         <b>1.</b> Maintained and developed systems such as the SAS (Simplified Accounting System) and a School Management System using the CakePHP MVC framework. <br />
-        <b>2.</b> Built management systems including Udaya Attendance and VET Attendance using the React.js framework. <br/>
-        <b>3.</b> Developed the <em>VET Express Booking website and miniapp VET at ABA</em> booking using VUE JS 2  <b>  <a href="https://vireakbuntham.com" target="_blank" title='https://vireakbuntham.com'>Click link</a> </b> 
+        <b>2.</b> Built management systems including Udaya Attendance and VET Attendance using the React.js framework. <br />
+        <b>3.</b> Developed the <em>VET Express Booking website and miniapp VET at ABA</em> booking using VUE JS 2  <b>  <a href="https://vireakbuntham.com" target="_blank" title='https://vireakbuntham.com'>Click link</a> </b>
       </p>
     ),
   },
@@ -426,7 +412,7 @@ export const experience: TimelineItem[] = [
       <p>
         I am a Frontend Developer at Mobile C&C. I used programing language  such as HTML CSS SCSS TAIWIND Javascript VUEJS VUETIFY TYPESCRIPT PINIA React JS. <br />
         <b>.</b> Designed responsive web pages and applications using HTML, CSS, and SCSS TAIWIND. <br />
-        <b>.</b> Developed and built web applications and app interfaces using Vue.js and the Ionic framework including CESCO KR App and Hiplus KR App.<br/>
+        <b>.</b> Developed and built web applications and app interfaces using Vue.js and the Ionic framework including CESCO KR App and Hiplus KR App.<br />
         <b>.</b> Collaborated with the Korean team and partner teams to create intuitive, logically structured, and visually engaging UI screens. <br />
         <b>.</b> Fixed bugs and performed client-requested maintenance on web applications, such as the Hanwha KR Project. <br />
         <b>.</b> Proactively learning new technologies, including React.js, Flutter, and Dart, to expand front-end and cross-platform development skills. <br />
@@ -519,10 +505,10 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Facebook', Icon: FacebookIcon, href: 'https://web.facebook.com/loa.mengsong'},
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/lormengsong'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://www.facebook.com/loa.mengsong'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/mengsong-lor-6a984b259/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/lormengsong/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://t.me/MENGSONGLOR'},
+  { label: 'Facebook', Icon: FacebookIcon, href: 'https://web.facebook.com/loa.mengsong' },
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/lormengsong' },
+  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://www.facebook.com/loa.mengsong' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/mengsong-lor-6a984b259/' },
+  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/lormengsong/' },
+  { label: 'Twitter', Icon: TwitterIcon, href: 'https://t.me/MENGSONGLOR' },
 ];

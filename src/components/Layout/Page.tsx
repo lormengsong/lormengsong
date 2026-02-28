@@ -1,12 +1,12 @@
-import {NextPage} from 'next';
+import { NextPage } from 'next';
 import Head from 'next/head';
-import {useRouter} from 'next/router';
-import {memo, PropsWithChildren} from 'react';
+import { useRouter } from 'next/router';
+import { memo, PropsWithChildren } from 'react';
 
-import {HomepageMeta} from '../../data/dataDef';
+import { HomepageMeta } from '../../data/dataDef';
 
-const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, description}) => {
-  const {asPath: pathname} = useRouter();
+const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({ children, title, description, keywords }) => {
+  const { asPath: pathname } = useRouter();
 
   return (
     <>
@@ -14,8 +14,10 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         <title>{title}</title>
         <meta content={description} name="description" />
 
+        <meta content={keywords?.join(', ')} name="keywords" />
+
         {/* several domains list the same content, make sure google knows we mean this one. */}
-        <link href={`https://reactresume.com${pathname}`} key="canonical" rel="canonical" />
+        <link href={`https://lormengsong.vercel.app${pathname}`} key="canonical" rel="canonical" />
 
         <link href="/favicon.ico" rel="icon" sizes="any" />
         <link href="/icon.svg" rel="icon" type="image/svg+xml" />
@@ -25,7 +27,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         {/* Open Graph : https://ogp.me/ */}
         <meta content={title} property="og:title" />
         <meta content={description} property="og:description" />
-        <meta content={`https://reactresume.com${pathname}`} property="og:url" />
+        <meta content={`https://lormengsong.vercel.app${pathname}`} property="og:url" />
 
         {/* Twitter: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup */}
         <meta content={title} name="twitter:title" />

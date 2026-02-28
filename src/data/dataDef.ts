@@ -1,7 +1,7 @@
-import {StaticImageData} from 'next/image';
-import {FC, ForwardRefExoticComponent, SVGProps} from 'react';
+import { StaticImageData } from 'next/image';
+import { FC, ForwardRefExoticComponent, SVGProps } from 'react';
 
-import {IconProps} from '../components/Icon/Icon';
+import { IconProps } from '../components/Icon/Icon';
 
 export interface OpenGraphMeta {
   title: string;
@@ -20,6 +20,7 @@ export interface OpenGraphMeta {
 export interface HomepageMeta {
   title: string;
   description: string;
+  keywords?: string[];
   ogImageUrl?: string | StaticImageData;
   openGraph?: OpenGraphMeta;
   twitterCardType?: 'summary' | 'summary_large';
