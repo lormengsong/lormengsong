@@ -407,7 +407,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'Auguest 2024 - Present',
     location: 'Mobile C&C',
-    title: 'FrontEnd Developer',
+    title: 'Software Engineer',
     content: (
       <p>
         I am a Frontend Developer at Mobile C&C. I used programing language  such as HTML CSS SCSS TAIWIND Javascript VUEJS VUETIFY TYPESCRIPT PINIA React JS. <br />
