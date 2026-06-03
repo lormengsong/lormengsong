@@ -16,7 +16,7 @@ I'm a passionate back-end and front-end developer with a knack for crafting robu
 - C , C++ , OOP
 
 ## Experience
-- 4 years Experience
+- 4 years plus Experience
 - Web Application Development
 - Database Design
 - REST API Development
@@ -25,3 +25,4 @@ I'm a passionate back-end and front-end developer with a knack for crafting robu
 ## Contact
 - Email: lormengsong@gmail.com
 - LinkedIn: [your-linkedin-url](https://lormengsong.vercel.app/)
+- Tel: 09631019195 (telegram)
